@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/30c6af757a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <div class="row citi">
+          <div class="col"><a href="#">Kyiv</a></div>
+          <div class="col"><a href="#">Kharkiv</a></div>
+          <div class="col"><a href="#">Poltava</a></div>
+          <div class="col"><a href="#">Odessa</a></div>
+        </div>
+        <div class="row">
+          <div class="col form-section">
+            <form action="#" method="post" id="formSearch">
+              <button>Current</button>
+              <!-- <input type="submit" value="Current" /> -->
+              <input type="submit" value="Search" />
+              <input
+                id="formInput"
+                type="text"
+                placeholder="Enter a city"
+                autocomplete="off"
+                autofocus="on"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="row selected-city">
+          <div class="col">
+            <div>
+              <h1>New York</h1>
+              <h2>
+                <span class="presentDay"></span>
+                <strong
+                  ><span class="presentHours"></span>:<span
+                    class="presentMinutes"
+                  ></span>
+                </strong>
+              </h2>
+              <p id="weatherSky">Clear</p>
+              <i class="fa-solid fa-sun sun"></i>
+              <p class="temperature">
+                <span id="temperatureNow"></span>
+                <span id="temperatureSystem">
+                  <sup
+                    ><a href="#" class="celsius">°C</a> │
+                    <a href="#" class="fahrenheit">°F</a></sup
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <p class="precipitation">
+              Humidity: <span class="humidity"></span> %<br />Wind:
+              <span class="wind"></span> km/h
+            </p>
+          </div>
+        </div>
+        <div class="row day">
+          <div class="col">
+            <p>Fri</p>
+            <i class="fa-solid fa-sun sun"></i>
+            <p>20°</p>
+          </div>
+          <div class="col">
+            <p>Sat</p>
+            <i class="fa-solid fa-cloud"></i>
+            <p>17°</p>
+          </div>
+          <div class="col">
+            <p>Sun</p>
+            <i class="fa-solid fa-cloud"></i>
+            <p>17°</p>
+          </div>
+          <div class="col">
+            <p>Mon</p>
+            <i class="fa-solid fa-cloud-rain rain"></i>
+            <p>15°</p>
+          </div>
+          <div class="col">
+            <p>Tue</p>
+            <i class="fa-solid fa-sun sun"></i>
+            <p>20°</p>
+          </div>
+          <div class="col">
+            <p>Wed</p>
+            <i class="fa-solid fa-sun sun"></i>
+            <p>20°</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Coded by Elena Sloth -->
+    <script src="script/script.js"></script>
+  </body>
+</html>
